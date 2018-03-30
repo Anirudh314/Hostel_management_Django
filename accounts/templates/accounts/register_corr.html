@@ -1,0 +1,51 @@
+{% extends 'base.html' %}  
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--  <link rel="stylesheet" type="text/css" href="login.css">  -->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/login1.css' %}" />
+
+</head>
+  
+{% block body %}
+  <h4 style="color:green" class="text-center">Successfully registered</h4>
+  <div class="wrapper container text-center" >
+    <form class="form-signin" method="POST">       
+      <center><h2 class="form-signin-heading" style="color:white">Student SignUp </h2></center><br><br>
+   
+    {% csrf_token %}
+    
+	{% for field in form %}
+	<div >
+	{{ field.label_tag }}<br>{{ field }}
+	</div>
+	{% endfor %}
+        <br>
+      <button class="btn btn-lg btn-primary" type="submit">Sign Up</button> 
+        <br><br>
+     
+    </form>
+    <h4>Already registered? Login here.</h4>      
+    <a href="/account/login"><button class="btn btn-lg btn-success" >Login </button></a>
+  </div>
+  <br><br>
+  <br><br>
+
+{% endblock %}
+
+  </head>
+  </html>
+

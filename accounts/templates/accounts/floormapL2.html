@@ -1,0 +1,694 @@
+{% extends 'base.html' %}
+<html>
+    <head>
+        {% load static %}
+        <style>
+          .center-block {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .smalltext{
+                font-size: 10px !important;
+            }
+        </style>
+        {% block title %}
+            <title>Floormap</title>
+        {% endblock %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+    </head>
+    <body>
+        	{% block body %}
+        
+            <nav class="nav navbar-inverse">
+                    <div class="container-fluid">
+                       <div class="navbar-header">
+                         <a class="navbar-brand" href="#">SJCE Boys Hostel</a>
+                         </div>
+                         <ul class="nav navbar-nav">
+                         <li class="active"><a href="/account/home_page">Home</a></li>
+                         <li><a href="/account/building">Buildings</a></li>
+                         <li><a href="/account/roomform">Book room</a></li>
+                         <li><a href="/account/">Logout</a></li>
+                         </ul>
+                     </div>
+                     </nav>
+                     <br><br>
+                     <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="padding-right:0px !important; margin-right:0px !important; border-right:0px !important">
+                    <img src=" {% static 'accounts/Images/Floors/L2floor.png' %}"  height="100%" width="100%" usemap="#floormap"/>
+                    <map name="floormap">
+                        <area shape="rect" coords="0,0,82,126" href="r1.htm" alt="Room1">
+                        <area shape="rect" coords="90,58,3" href="r2.htm" alt="Room2">
+                    </map>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div class="jumbotron">
+        <div class="container">
+            <div class="text-center">
+                <h2>View Room Details</h2>
+            </div>
+            <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                        <a href="#" data-toggle="modal" data-target="#l56">L56</a>            
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l57">L57</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l58">L58</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l59">L59</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l60">L60</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l61">L61</a>              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                        <a href="#" data-toggle="modal" data-target="#l62">L62</a>            
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l63">L63</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l64">L64</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l65">L65</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l66">L66</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l67">L67</a>              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                        <a href="#" data-toggle="modal" data-target="#l68">L68</a>            
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l69">L69</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l70">L70</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l71">L71</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l72">L72</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l73">L73</a>              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                        <a href="#" data-toggle="modal" data-target="#l74">L74</a>            
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l75">L75</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l76">L76</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l77">L77</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l78">L78</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l79">L79</a>              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                        <a href="#" data-toggle="modal" data-target="#l80">L80</a>            
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l81">L81</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l82">L82</a>              
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l83">L83</a>  
+                </div>
+                <div class="col-md-2 col-sm-4">
+                        <a href="#"  data-toggle="modal" data-target="#l84">L84</a>              
+                </div>
+            </div>
+            <div class="modal fade" id="l56" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L56</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L56
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l57" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L57</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L57
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l58" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L58</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L58
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l59" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L59</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L59
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l60" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L60</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L60
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l61" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L61</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L61
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l62" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L62</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L62
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l63" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L63</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L63
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l64" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L64</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L64
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l65" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L65</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L65
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l66" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L66</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L66
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l67" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L67</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L67
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l68" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L68</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L68
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l69" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L69</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L69
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l70" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L70</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L70
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l71" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L71</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L71
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l72" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L72</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L72
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l73" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L73</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L73
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l74" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L74</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L74
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l75" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L75</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L75
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l76" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L76</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L76
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l77" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L77</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L77
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l78" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L78</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L78
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l79" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L79</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L79
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l80" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L80</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L80
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l81" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L81</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L81
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l82" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L82</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L82
+                        </p>
+                        <img src=" {% static 'accounts/Images/Rooms/L82.jpg' %}" width="300" height="200"/>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l83" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L83</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L83
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade" id="l84" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content" style="background-color: #0e0e0e; color: white">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title text-center">L84</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        This is Room L84
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="container text-center">
+                <h2><a href="/account/roomform"><button type="button" class="btn btn-success btn-lg" href="/account/roomform">Book Room</button></a></h2>
+            </div>    
+            <br><br>
+            <br><br>
+            <br><br> 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        {% endblock %}
+    </body>
+</html>

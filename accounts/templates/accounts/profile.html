@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+</head>
+{% block title %}
+<title>Welcome</title>
+{% endblock %}
+<body style="background:blue">
+    {% block body %}
+    <nav class="nav navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">SJCE Boys Hostel</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="/account/home_page">Guidelines</a></li>
+        <li><a href="/account/building">Browse Buildings</a></li>
+        <li><a href="/account/profile">Account</a></li>
+        <li><a href="/account/">Logout</a></li>
+        </ul>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <div class="jumbotron text-left" style="background-color: rgba(255,255,255,0.1); color:white">
+            <h2>User Profile</h2>
+             <h3>Username: {{ request.user.username }}</h3>
+             <h3>Email: {{ request.user.email }} </h3>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+        {% endblock %}
+    </body>
+    
+    
+    </html>

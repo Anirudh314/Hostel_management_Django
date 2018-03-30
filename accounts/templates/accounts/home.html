@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+	</head>
+{% block title %}
+	<title>Homepage</title>
+{% endblock %}
+<body style="background-color:black;">
+	{% block body %}
+ 	<nav class="nav navbar-inverse">
+  	 <div class="container-fluid">
+      		<div class="navbar-header">
+        		<a class="navbar-brand" href="#">SJCE Boys Hostel</a>
+        	</div>
+        	<ul class="nav navbar-nav">
+        		<li class="active"><a href="#">Images</a></li>
+       			<li><a href="/account/login.html" >Login</a></li>  
+            <li><a href ="{% url 'register1' %}">SignUp</a></li>
+
+       	      </ul>
+    </div>
+  <br>  
+  <div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <br>
+    <div class="carousel-inner role="listbox"">
+      <div class="item active">
+      <img src="{% static 'accounts/Images/homepage/hostel3.jpg' %}" class="img-thumbnail" alt="logo" style="width:100%;max-height:450px;">
+      }
+      </div>
+      <div class="item">
+        <img src="{% static 'accounts/Images/homepage/hostel1.jpg' %}" class="img-thumbnail" alt="logo" style="width:100%;max-height:450px;">
+      </div>
+    <div class="item">
+        <img src="{% static 'accounts/Images/homepage/hostel.jpg' %}" class="img-thumbnail" alt="logo" style="width:100%;max-height:450px;">
+      </div>
+      <br>
+    </div>
+    <br>
+  </div>
+  <div class="container-fluid">
+  <div style="width:100%;background-color:black;color:black;position:static;left:0px">
+  <div class="panel panel-default">
+    <div class="panel-heading"><b>Facilities</b></div>
+    <div class="panel-body">The College has separate hostel facilities for about 570 boys [UG-515 and PG (M.Tech & MCA only) – 55]. The boys’ hostel is located in the college premises, in Block-1 (M), Block-2 (H), Block-3 (L), PG Block and GH Blocks (1,2,5 & 6), all located on the north-end of the campus. The hostel runs a mess. Also RO System for drinking water (24 hours), Electricity though back up (24 hours), Hot water facility (Geyser), a separate TV room, reading hall (News paper), Wi-Fi internet facility and Parking lot for two wheelers are provided in the Boys’ Hostel.<br>
+
+    Anti-ragging squads comprising of senior Professors supervise at both college as well as Hostel premises</div>
+    <div class="panel-body">Free Wi-Fi,</div>
+    <div class="panel-body">TV room</div>
+    <div class="panel-body">Reading room,</div>
+    <div class="panel-body"> R.O Drinking Water-1000 L/Hr,</div>
+    <div class="panel-body">24 X 7 Electricity</div>
+    <div class="panel-body">Hot Water Facility</div>
+  </div>
+  </div>
+  </div>
+  {% endblock %}
+</body>
+</html>     
+

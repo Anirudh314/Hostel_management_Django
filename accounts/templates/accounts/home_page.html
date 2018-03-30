@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+</head>
+{% block title %}
+<title>Welcome</title>
+{% endblock %}
+<body style="background:blue">
+    {% block body %}
+ <nav class="nav navbar-inverse">
+   <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">SJCE Boys Hostel</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="/account/home_page">Guidelines</a></li>
+        <li><a href="/account/building">Browse Buildings</a></li>
+        <li><a href="/account/profile">Account</a></li>
+        <li><a href="/account/">Logout</a></li>
+        </ul>
+    </div>
+    </nav>
+    <br>
+    <br>
+     <div class="Container-fliud">
+    <ul style="color:white;font-size:100%">
+    <li >Students must occupy rooms specifically allotted to them. They are not allowed to change rooms except with the written permission of the Warden/ Chief Warden. However, students can choose their room-mates as per their choice within first few days, and duly inform their Hostel Warden.</li><br>
+    <li >Change of accommodation from one hostel to another during a term is generally not permitted.</li><br>
+    <li>Allotment made to a student is subject to cancellation if he/she fails to occupy the room within the prescribed time. Students are liable to forfeit their rooms if they fail to clear all their dues to the hostel by the appointed day and are asked to vacate the hostel.</li><br>
+    <li >The Chief Warden reserves the right to break open rooms in case of any violation of hostel rules, suspected unlawful activities or on a perceived security risk.</li><br>
+    <li >Once a student vacates the hostel, he/she is not re-allotted hostel accommodation for a minimum period of 6 months.</li><br>
+    <li >Rooms allotted to the students at the time of admission are for a limited period of up to one year or less. Residents are required to shift to other blocks/ rooms as and when informed by hostel authorities, due to administrative reasons. Residents shall not change over to any other room except with the written permission of the Chief Warden.</li><br>
+    <li >Residents who wish to vacate the hostel must meet the caretaker for necessary formalities. Permission of the students’ parents and HOIs along with certain documentation is mandatory. While planning to vacate the hostel refund rules given at the end of this book must be consulted.</li><br>
+    </ul>
+    </div>
+    <br>
+    <br>
+    {% endblock %}
+    </body>
+    </html>

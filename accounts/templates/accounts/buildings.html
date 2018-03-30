@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+<html>
+    <head>
+        {% load static %}
+        <style>
+          .center-block {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .smalltext{
+                font-size: 10px !important;
+            }
+        </style>
+        {% block title %}
+	        <title>Buildings</title>
+        {% endblock %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">        
+    </head>
+    <body >
+        	{% block body %}
+            <nav class="nav navbar-inverse">
+                    <div class="container-fluid">
+                       <div class="navbar-header">
+                         <a class="navbar-brand" href="#">SJCE Boys Hostel</a>
+                         </div>
+                         <ul class="nav navbar-nav">
+                         <li class="active"><a href="/account/home_page">Home</a></li>
+                         <li><a href="/account/roomform">Book room</a></li>
+                         <li><a href="/account/">Logout</a></li>
+                         </ul>
+                     </div>
+                     </nav>
+                     <br><br>
+                     <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12" style="padding-right:0px !important; margin-right:0px !important; border-right:0px !important">
+                     <div class="dropdown">
+                        <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                            <span class="caret">
+                                <img src=" {% static 'accounts/Images/Buildings/GH.jpg' %}"  />
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu smalltext">
+                            <li class="dropdown-header"><b>GH Block</b></li> 
+                            <li><a href="#">Block 1</a></li>
+                            <li><a href="#">Block 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-6 col-sm-12" style="padding-left:0px !important; margin-left:0px !important; border-left:0px !important">
+                     <div class="dropdown">
+                        <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                            <span class="caret">
+                                    <img src=" {% static 'accounts/Images/Buildings/PG1.jpg' %}"  />
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu smalltext">
+                            <li class="dropdown-header"><b>Select floor</b></li>
+                            <li><a href="#">Ground Floor</a></li>
+                            <li><a href="#">1st Floor</a></li>
+                            <li><a href="#">2nd Floor</a></li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+            </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <div class="row">
+                    <div class="col-md-6 col-sm-12" style="padding-right:0px !important; margin-right:0px !important; border-right:0px !important">
+                         <div class="dropdown">
+                            <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                                <span class="caret">
+                                        <img src=" {% static 'accounts/Images/Buildings/L.jpg' %}"  />
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu smalltext">
+                                <li class="dropdown-header"><b>L Block</b></li>
+                                <li><a href="/account/floormapLG">Ground Floor</a></li>
+                                <li><a href="/account/floormapL1">1st Floor</a></li>
+                                <li><a href="/account/floormapL2">2nd Floor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-6 col-sm-12" style="padding-left:0px !important; margin-left:0px !important; border-left:0px !important">
+                         <div class="dropdown">
+                            <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                                <span class="caret">
+                                        <img src=" {% static 'accounts/Images/Buildings/PG2.jpg' %}"   />
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu smalltext">
+                                <li class="dropdown-header"><b>Select floor</b></li>
+                                <li><a href="#">Ground Floor</a></li>
+                                <li><a href="#">1st Floor</a></li>
+                                <li><a href="#">2nd Floor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    -->
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-sm-12" style="padding-right:0px !important; margin-right:0px !important; border-right:0px !important">
+                             <div class="dropdown">
+                                <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                                    <span class="caret">
+                                            <img src=" {% static 'accounts/Images/Buildings/H.jpg' %}"     class="center-block" />
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu smalltext">
+                                    <li class="dropdown-header"><b>H Block</b></li>
+                                    <li><a href="#">Ground Floor</a></li>
+                                    <li><a href="#">1st Floor</a></li>
+                                    <li><a href="#">2nd Floor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="padding-left:0px !important; margin-left:0px !important; border-left:0px !important">
+                             <div class="dropdown">
+                                <button class="btn btn-primary-outline dropdown-toggle" type="button" data-toggle="dropdown" >
+                                    <span class="caret">
+                                            <img src=" {% static 'accounts/Images/Buildings/M.jpg' %}"    class="center-block"/>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu smalltext">
+                                    <li class="dropdown-header"><b>M Block</b></li>
+                                    <li><a href="/account/floormapMG">Ground Floor</a></li>
+                                    <li><a href="/account/floormapM1">1st Floor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        {% endblock %}
+    </body>
+</html>
